@@ -61,7 +61,7 @@
               class="mdl-textfield__input"
               type="number"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length"
+              id="street-number"
             />
             <!-- mdl-textfield__label -->
             <label class="mdl-textfield__label" for="street-number"
@@ -75,11 +75,17 @@
           <p>Street name</p>
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
-            <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="length" />
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              id="street-name"
+            />
             <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="street-number">Street name</label>
+            <label class="mdl-textfield__label" for="street-number"
+              >Street name</label
+            >
             <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number</span>
+            <span class="mdl-textfield__error">Input is not a text</span>
           </div>
           <br />
           <!-- Accent-colored raised button with ripple -->
@@ -93,7 +99,7 @@
         </form>
         <br />
         <div class="page-content-answer">
-          <div id="answer">The answer is: </div>
+          <div id="answer">The answer is:</div>
         </div>
       </main>
     </div>

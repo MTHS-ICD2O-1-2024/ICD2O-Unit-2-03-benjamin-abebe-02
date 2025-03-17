@@ -6,5 +6,11 @@
 
 
 function myButtonClicked() {
-  alert("Hello, World!")
+  // input
+  const streetnumber = document.getElementById("street-number").value
+  const streetname = document.getElementById("street-name").value
+
+  // output
+  document.getElementById("answer").innerHTML = 
+  "Your address is:- " + streetname + " , " + streetnumber + "."
 }
